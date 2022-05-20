@@ -35,7 +35,7 @@ npm i @krampstudio/recog
 #### Usage as a vanilla JavaScript component
 
 ```js
-import RecogWidget from 'recog';
+import RecogWidget from '@krampstudio/recog';
 
 new RecogWidget({
   target: document.querySelector('.some-container'),
@@ -45,14 +45,14 @@ new RecogWidget({
 });
 ```
 
-
 #### Usage as a Svelte component
 
 ```js
 <script>
-  import RecogWidget from 'recog/lib/RecogWidget.svelte';
+  import RecogWidget from '@krampstudio/recog';
   const apiUrl = 'https://vision.googleapis.com/v1/images:annotate?key=<YOUR_VISION_API_KEY>'
 </script>
+
 <RecogWidget {apiUrl} />
 ```
 
