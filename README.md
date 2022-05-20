@@ -29,7 +29,7 @@ npm start
 ### As a library
 
 ```bash
-npm i recog
+npm i @krampstudio/recog
 ```
 
 #### Usage as a vanilla JavaScript component
@@ -62,6 +62,7 @@ The styles are provided by [tailwindcss](https://tailwindcss.com/).
 
 ## Development
 
+ - unit test : `npm test`
  - run the dev server : `npm dev`
  - lint the code : `npm lint`
 

@@ -20,6 +20,9 @@
     "type": "git",
     "url": "git+https://github.com/krampstudio/recog.git"
   },
+    "publishConfig": {
+        "access": "public"
+    },
   "author": "Bertrand Chevrier",
   "license": "MIT",
   "bugs": {
