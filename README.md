@@ -62,7 +62,6 @@ The styles are provided by [tailwindcss](https://tailwindcss.com/).
 
 ## Development
 
- - run the test : `npm test`
  - run the dev server : `npm dev`
  - lint the code : `npm lint`
 

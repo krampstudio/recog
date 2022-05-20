@@ -1,0 +1,39 @@
+{
+  "name": "@krampstudio/recog",
+  "version": "0.1.0",
+  "description": "A widget for object recognition in images",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "lint": "eslint --config .eslintrc.cjs {demo,lib}/**/*.{svelte,ts,json}"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krampstudio/recog.git"
+  },
+  "author": "Bertrand Chevrier",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/krampstudio/recog/issues"
+  },
+  "homepage": "https://github.com/krampstudio/recog#readme",
+  "type": "module",
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.44",
+    "@tsconfig/svelte": "^3.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.25.0",
+    "@typescript-eslint/parser": "^5.25.0",
+    "autoprefixer": "^10.4.7",
+    "dotenv": "^16.0.1",
+    "eslint": "^8.15.0",
+    "eslint-plugin-svelte3": "^4.0.0",
+    "postcss": "^8.4.13",
+    "prettier": "^2.6.2",
+    "prettier-plugin-svelte": "^2.7.0",
+    "svelte": "^3.48.0",
+    "svelte-preprocess": "^4.10.6",
+    "tailwindcss": "^3.0.24",
+    "typescript": "^4.6.4",
+    "vite": "^2.9.9"
+  }
+}
