@@ -2,10 +2,17 @@
   "name": "@krampstudio/recog",
   "version": "0.1.0",
   "description": "A widget for object recognition in images",
-  "main": "index.js",
+  "main": "dist/recog.es.js",
+  "svelte": "lib/RecogWidget.svelte",
+  "files": [
+    "lib/**/*",
+    "dist/**/*"
+  ],
   "scripts": {
     "dev": "vite",
-    "lint": "eslint --config .eslintrc.cjs {demo,lib}/**/*.{svelte,ts,json}"
+    "build": "vite build",
+    "lint": "eslint --config .eslintrc.cjs {demo,lib}/**/*.{svelte,ts,json}",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",

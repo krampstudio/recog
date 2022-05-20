@@ -6,5 +6,14 @@ export default defineConfig({
     css: {
         postcss
     },
+    build: {
+
+        sourcemap: true,
+        lib: {
+            entry: "lib/RecogWidget.svelte",
+            name: "RecogWidget"
+        },
+    },
+
     plugins: [svelte()]
 });

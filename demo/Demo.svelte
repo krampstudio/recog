@@ -14,7 +14,7 @@
 <h1 class="text-center text-xl">Demo application for the Recog Widget</h1>
 <div class="w-screen max-w-[50%] my-6 mx-auto">
     {#if error}
-        <p class="text-red">{error.message}</p>
+        <p class="text-rose-700 text-center">{error.message}</p>
     {:else}
         <RecogWidget {apiUrl} />
     {/if}
