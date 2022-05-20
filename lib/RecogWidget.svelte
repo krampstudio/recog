@@ -60,11 +60,12 @@
             objectUrl = URL.createObjectURL(file);
 
             size = await getImageSize(objectUrl);
-            if( size.x < 100 || size.y < 100) {
-                throw new Error('The selected image is too small');
+            if (size.width < 100 || size.height < 100) {
+                throw new Error('The selected image is too small (min 100x100)');
             }
-            if( size.x > 3000 || size.y > 3000) {   //TODO check API restricitions
-                throw new Error('The selected image is too big');
+            //TODO check API restricitions
+            if (size.width > 3000 || size.height > 3000) {
+                throw new Error('The selected image is too big (max 3000x3000)');
             }
 
             $stateStore = State.selected;
@@ -84,15 +85,15 @@
             visionProcessor.process(apiUrl, file, size),
             new Promise(resolve => setTimeout(resolve, 2000))
         ])
-        .then(results => {
-            shapes = results[0];
-            if(shapes.length === 0){
-                throw new Error('No object detected');
-            } else {
-                $stateStore = State.processed;
-            }
-        })
-        .catch(handleError);
+            .then(results => {
+                shapes = results[0];
+                if (shapes.length === 0) {
+                    throw new Error('No object detected');
+                } else {
+                    $stateStore = State.processed;
+                }
+            })
+            .catch(handleError);
     }
 
     onDestroy(() => {
@@ -104,7 +105,7 @@
 
 <div class="w-full h-full rounded border-gray-400 border-solid border p-4">
     {#if $stateStore == State.error}
-        <p>{error.message}</p>
+        <p class="text-center text-rose-700 text-xl">{error.message}</p>
     {/if}
     {#if $stateStore == State.initial}
         <Selector on:filechange={preview} />
@@ -127,8 +128,8 @@
             <button
                 class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow disabled:text-gray-300 disabled:cursor-not-allowed"
                 on:click={startProcessing}
-                disabled={$stateStore === State.processing}>Process</button
-                >
+                disabled={$stateStore === State.processing || $stateStore === State.error}>Process</button
+            >
         </div>
     {/if}
 </div>

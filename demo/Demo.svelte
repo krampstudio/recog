@@ -4,7 +4,7 @@
 
     let error: Error;
     if (!config?.api?.key) {
-        error = new Error('Please setup your Vision API key first');
+        error = new Error('Please setup your Vision API key first in demo/config.json.');
     }
 
     //generate API URL statically
