@@ -1,7 +1,7 @@
 # recog
 Image Recognition Widget
 
-[![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE) - [![npm version](https://badge.fury.io/js/@krampstudio%2Frecog.svg)](https://badge.fury.io/js/@krampstudio%2Frecog)
 
 ![Svelte](https://img.shields.io/badge/svelte-%23f1413d.svg?style=for-the-badge&logo=svelte&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
