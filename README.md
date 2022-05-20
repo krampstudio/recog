@@ -1,0 +1,2 @@
+# recog
+Image Recognition Widget
