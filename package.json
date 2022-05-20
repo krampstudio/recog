@@ -13,6 +13,7 @@
     "test:dev": "npm test -- --watch",
     "dev": "vite",
     "build": "vite build",
+    "start": "npm run dev",
     "lint": "eslint --config .eslintrc.cjs {demo,lib}/**/*.{svelte,ts,json}",
     "prepare": "npm run build"
   },
