@@ -1,9 +1,13 @@
+/**
+ * @license MIT
+ * @author Bertrand Chevrier
+ */
 import Demo from './Demo.svelte';
 import './index.css';
 
-console.log(import.meta.env.MODE);
-console.log(import.meta.env.RECOG_VISION_API_URL);
-
+/**
+ * Demo application entry point
+ */
 new Demo({
-    target: document.querySelector('main')
+    target: document.querySelector('body > main')
 });
