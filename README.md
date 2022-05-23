@@ -18,7 +18,7 @@ npm ci
 
 The widget uses the [Google Cloud Vision Api](https://cloud.google.com/vision) to detect objects in images. You'll have to [set up vision](https://cloud.google.com/vision/docs/setup) and provide an [API KEY](https://cloud.google.com/docs/authentication/api-keys) in order to connect to the service.
 
-The key needs to be set in `config.json`.
+The key needs to be set in `demo/config.json`.
 
 To start the demo app:
 
